@@ -5,9 +5,12 @@ export const Button = styled.button`
     padding: 15px 25px;
     color: var(--white-color);
     border: none;
-    font-size: 14px;
-    background-color: ${props => props.primary ? '#2b8e2b' : 'transparent'};
+    font-size: 16px;
+    background-color: ${props => props.primary ? '#8fc56d' : 'transparent'};
     cursor: pointer;
 
     &:focus { outline: none; }
+    &:hover {
+        background-color: ${props => props.primary ? '#7fb55d' : 'transparent'};
+    }
 `;

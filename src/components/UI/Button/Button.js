@@ -4,4 +4,4 @@ import { Button } from './Button.css';
 
 const button = props => <Button {...props}>{props.children}</Button>;
 
-export default button;
+export default React.memo(button);

@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Flick It, by Gonzalo Stoll
+Demo app of a Flickr photo fetcher with a search form.
 
 ## Available Scripts
 

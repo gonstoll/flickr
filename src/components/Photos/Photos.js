@@ -4,12 +4,20 @@ import React from 'react';
 import SinglePhoto from './SinglePhoto/SinglePhoto';
 
 // Styles
-import { Photos } from './Photos.css';
+import { PhotosContainer } from './Photos.css';
 
-const photos = props => {
-    const photos = props.photos.map(photo => <SinglePhoto key={photo.id} photo={photo} load={props.load} />);
+const Photos = props => {
+    let photos = <h2>{props.error.message}</h2>;
 
-    return <Photos allLoaded={props.loading}>{photos}</Photos>;
+    if (!props.error.error) {
+        photos = props.photos.map(photo => <SinglePhoto key={photo.id} photo={photo} load={props.load} />);
+    }
+
+    return (
+		<PhotosContainer allLoaded={props.allLoaded} error={props.error.error}>
+			{photos}
+		</PhotosContainer>
+	);
 };
 
-export default photos;
+export default React.memo(Photos);

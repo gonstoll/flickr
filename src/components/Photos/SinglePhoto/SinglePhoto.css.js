@@ -18,7 +18,7 @@ export const PhotoInfo = styled.div`
     border-radius: 10px;
 
 	h1 {
-		font-size: 20px;
+		font-size: 18px;
         margin: 0;
         overflow: hidden;
         display: -webkit-box;

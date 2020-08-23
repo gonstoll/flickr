@@ -9,11 +9,17 @@ import Button from '../UI/Button/Button';
 import { Header } from './Header.css';
 
 const header = props => (
-    <Header>
-        <Logo />
-        <Search search={props.search} />
-        <Button primary>Log in</Button>
-    </Header>
+	<Header>
+		<Logo />
+		<Search
+			search={props.search}
+			change={props.change}
+			searchValue={props.searchValue}
+            emptySearchValue={props.emptySearchValue}
+            allLoaded={props.allLoaded}
+		/>
+		<Button primary>Log in</Button>
+	</Header>
 );
 
-export default header;
+export default React.memo(header);

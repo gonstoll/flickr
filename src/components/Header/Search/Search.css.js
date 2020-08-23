@@ -5,7 +5,7 @@ export const Input = styled.input`
     border: none;
     padding: 15px;
     padding-left: 45px;
-    background-color: #f3f3f3;
+    background-color: #dcdcdc;
     color: var(--dark-color);
     font-size: 14px;
     width: 100%;
@@ -17,6 +17,15 @@ export const Input = styled.input`
     :-moz-placeholder{ color: #797979; }
 
     &:focus { outline: none; }
+    &:disabled { cursor: not-allowed; }
+`;
+
+export const EmptySearch = styled.button`
+    color: var(--dark-color);
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    display: ${props => props.hasText ? 'block' : 'none'};
 `;
 
 export const Form = styled.form`
@@ -32,11 +41,11 @@ export const Form = styled.form`
         transform: translateY(-50%);
         padding: 0;
 
-        svg {
-            width: 16px;
-            opacity: .5;
+        &:focus { outline: none; }
+    }
 
-            &:hover { opacity: 1; }
-        }
+    ${EmptySearch} {
+        right: 20px;
+        left: unset;
     }
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
 
-const logo = () => <p>Flickr</p>;
+const logo = () => <p>Flick It</p>;
 
-export default logo;
+export default React.memo(logo);
