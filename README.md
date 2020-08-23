@@ -1,4 +1,4 @@
-# Flick It, by Gonzalo Stoll
+# flickit, by Gonzalo Stoll
 Demo app of a Flickr photo fetcher with a search form.
 
 ## Available Scripts
