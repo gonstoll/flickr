@@ -6,11 +6,13 @@ export const Button = styled.button`
     color: var(--white-color);
     border: none;
     font-size: 16px;
-    background-color: ${props => props.primary ? '#8fc56d' : 'transparent'};
+    background-color: ${props => props.primary ? '#04a87c' : 'transparent'};
     cursor: pointer;
 
     &:focus { outline: none; }
     &:hover {
-        background-color: ${props => props.primary ? '#7fb55d' : 'transparent'};
+        background-color: ${props => props.primary ? '#009f74' : 'transparent'};
     }
+
+    span { font-weight: bold; }
 `;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-    padding: 10px 20px;
+    padding: 15px 30px;
     box-shadow: 0px 4px 13px 2px rgba(0, 0, 0, .1);
     background-color: rgba(253, 253, 253, .93);
     display: flex;

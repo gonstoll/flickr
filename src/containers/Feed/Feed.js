@@ -10,6 +10,7 @@ import Spinner from '../../components/UI/Spinner/Spinner';
 import { Main } from './Feed.css';
 
 const Feed = () => {
+    // State
     const [feed, setFeed] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
@@ -82,15 +83,13 @@ const Feed = () => {
 				change={changeHandler}
 				searchValue={search}
 				emptySearchValue={emptySearchValue}
-				allLoaded={loading}
-			/>
+				allLoaded={loading} />
 			<Main>
 				<Photos
 					photos={feed}
 					load={handleImageLoaded}
 					allLoaded={loading}
-					error={error}
-				/>
+					error={error} />
 				<Spinner isLoading={loading} />
 			</Main>
 		</>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const PhotosContainer = styled.div`
-    padding-top: 20px;
+    margin-top: 20px;
     display: ${props => props.allLoaded ? 'none' : 'block'};
 
     @media (min-width: 768px) {

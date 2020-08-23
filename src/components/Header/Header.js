@@ -18,7 +18,7 @@ const header = props => (
             emptySearchValue={props.emptySearchValue}
             allLoaded={props.allLoaded}
 		/>
-		<Button primary>Log in</Button>
+		<Button primary>Log <span>in</span></Button>
 	</Header>
 );
 

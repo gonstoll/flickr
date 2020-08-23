@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const PhotoInfo = styled.div`
 	position: absolute;
-	bottom: 0;
+	bottom: 15px;
     left: 0;
     right: 0;
-    top: 0;
+    top: 15px;
     padding: 20px;
     color: var(--white-color);
     display: flex;
@@ -39,9 +39,9 @@ export const PhotoInfo = styled.div`
 
 export const SinglePhoto = styled.div`
     break-inside: avoid;
-    margin-bottom: 30px;
     position: relative;
     box-sizing: border-box;
+    padding: 15px 0;
 
     img {
         vertical-align: middle;
